@@ -6,6 +6,8 @@
 template<typename T>
 class Tree
 {
+	template<typename U> using sptr = std::shared_ptr<U>;
+	template<typename U> using wptr = std::weak_ptr<U>;
 public:
 	struct Node
 	{
